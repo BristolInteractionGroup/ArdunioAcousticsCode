@@ -5,7 +5,7 @@
 // the sketch uses individual clock cycles to generate square waves - 2 are needed (on and off) for each wave period
 
 // use ± signal so the transducers osilate about their centres
-byte pattern = 0b10101010; // consecutive ports will have an opposite signal
+byte pattern = 0b11111111; // consecutive ports will have same signal
 
 void setup()
 {

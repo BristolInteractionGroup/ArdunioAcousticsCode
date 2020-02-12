@@ -4,7 +4,7 @@
 // this sketch sets the analogue ports to output a push-pull driving signal using an arduino and L298N H-bridge motor driver
 // the sketch uses individual clock cycles to generate square waves - 2 are needed (on and off) for each wave period
 
-byte pattern = 0b10101010; // consecutive ports will have an opposite signal for push-pull for push config use 0b11111111
+byte pattern = 0b11111111; // consecutive ports will have an opposite signal for push-pull for push config use 0b11111111
 
 void setup()
 {
