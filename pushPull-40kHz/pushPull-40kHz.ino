@@ -5,7 +5,7 @@
 // the sketch uses individual clock cycles to generate square waves - 2 are needed (on and off) for each wave period
 
 // use ± signal so the transducers osilate about their centres
-byte pattern = 0b11111111; // consecutive ports will have same signal
+byte pattern = 0b10101010; // consecutive ports will have same signal
 
 void setup()
 {
@@ -24,7 +24,7 @@ void setup()
 
   // we are using individual clock cycles to set the freuqency. The counter starts from 0 and the processor is 16 MHz
   
-  OCR1A = 319;               // ***** CHANGE THIS ONE TO CHANGE FREQUENCY f_out = [(16 MHZ / 2X FREQUENCY) - 1] as the arduino clock is 16MHz ******
+  OCR1A = 199;               // ***** CHANGE THIS ONE TO CHANGE FREQUENCY f_out = [(16 MHZ / 2X FREQUENCY) - 1] as the arduino clock is 16MHz ******
   // 25 kHz = 319 
   // 40 kHz = 199 
   // 57.97 kHz = 137
