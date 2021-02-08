@@ -5,14 +5,14 @@
 // the sketch uses individual clock cycles to generate square waves - 2 are needed (on and off) for each wave period
 
 // use ± signal so the transducers osilate about their centres
-byte pattern = 0b10101010; // consecutive ports will have same signal
+byte pattern = 0b10101111; // consecutive ports will have same signal
 
 void setup()
 {
 
  DDRC = 0b11111111; //set pins A0 to A7 as outputs
  DDRD = 0b11111100; // set digital pins as outputs, leave TX & RX alone
- PORTC = 0b00000000; //output low signal to all A*
+ PORTC = 0b00000000; // output low signal to all Analogue I/Os 
  PORTD = 0b00001100; // set D2 (ENB) & D3(ENA) high to enable the outputs of the h-bridge
  
   // initialize timer1 
